@@ -11,7 +11,7 @@
             <div id="round-info">Round <span id="round-num">1</span> of 5</div>
             <div id="play-area">
                 <div id="rune-display"></div>
-                <span>=</span>
+                <span id="equal-sign">=</span>
                 <div id="guess-form">
                     <select id="enchant-select">
                         <option value="">Not selected</option>
@@ -19,13 +19,13 @@
                 </div>
             </div>
             <div id="guess-btn-container">
-                <button id="guess-btn">Guess</button>
+                <button id="guess-btn">Guess Enchant</button>
             </div>
         </div>
 
         <div id="results-container" class="hidden">
-            <h2>Game Over!</h2>
-            <p>Your total score: <span id="total-score">0</span></p>
+            <h2 class="game-over">Game Over!</h2>
+            <p class="score">Your total score: <span id="total-score">0</span></p>
             <table id="score-table">
                 <thead>
                     <tr>

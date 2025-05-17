@@ -72,7 +72,7 @@ function renderRunes(text) {
         .forEach((ch, i) => {
             if (/[A-Z]/.test(ch)) {
                 const img = new Image();
-                img.src = `symbols/${ch}.png`;
+                img.src = `resources/light/${ch}.png`;
                 img.onload = () => {
                     ctx.drawImage(img, i * size, 0, size, size);
                 };
