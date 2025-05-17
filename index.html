@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Enchant Guesser</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="game-container">
+            <div id="notification">Wrong! Try again.</div>
+            <div id="round-info">Round <span id="round-num">1</span> of 5</div>
+            <div id="play-area">
+                <div id="rune-display"></div>
+                <span>=</span>
+                <div id="guess-form">
+                    <select id="enchant-select">
+                        <option value="">Not selected</option>
+                    </select>
+                </div>
+            </div>
+            <div id="guess-btn-container">
+                <button id="guess-btn">Guess</button>
+            </div>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Your total score: <span id="total-score">0</span></p>
+            <table id="score-table">
+                <thead>
+                    <tr>
+                        <th>Round</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

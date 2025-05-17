@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+#game-container {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#notification {
+    background: #ff3b3b;
+    color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+#round-info {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+#play-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#rune-display {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#guess-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#enchant-select {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+#guess-btn,
+#play-again-btn {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#score-table {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+}
+
+#score-table th,
+#score-table td {
+    border: 1px solid #dddddd;
+    padding: 0.5rem;
+}
