@@ -87,6 +87,13 @@ header {
     display: none;
 }
 
+.title {
+    top: -8rem;
+    position: relative;
+    font-size: 4rem;
+    line-height: 0rem;
+}
+
 #notification {
     background: #8d0000;
     color: #ffffff;
